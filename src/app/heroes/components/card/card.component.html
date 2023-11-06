@@ -6,6 +6,7 @@
     <mat-card-subtitle>
       {{ hero.alter_ego }}
     </mat-card-subtitle>
+
   </mat-card-header>
   <!--TODO: imagen -->
   <img mat-card-image [src]="hero | heroImage" [alt]="hero.superhero">
@@ -14,6 +15,9 @@
     <h4>{{ hero.publisher }}</h4>
     <p>
       <strong>Primera aparición</strong>
+      <mat-card-subtitle>
+        {{ hero.first_appearance }}
+      </mat-card-subtitle>
       <br>
       <mat-chip-listbox>
         <mat-chip *ngFor="let name of hero.characters.split(',') | slice:0:3" >
