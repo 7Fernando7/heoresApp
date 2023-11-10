@@ -1,3 +1,3 @@
 export const environments = {
-  baseUrl: 'http://fernando-paiva.com=api'
+  baseUrl: 'http://localhost:3000'
 }

@@ -26,7 +26,8 @@
             ],
             "styles": [
               "@angular/material/prebuilt-themes/deeppurple-amber.css",
-              "src/styles.css"
+              "src/styles.css",
+              "src/fonts.css"
             ],
             "scripts": []
           },
@@ -54,7 +55,11 @@
             },
             "development": {
               "buildOptimizer": false,
-              "optimization": false,
+              "optimization": {
+                "scripts": true,
+                 "styles": true,
+                 "fonts": false
+             },
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
@@ -95,7 +100,8 @@
             ],
             "styles": [
               "@angular/material/prebuilt-themes/deeppurple-amber.css",
-              "src/styles.css"
+              "src/styles.css",
+              "src/fonts.css"
             ],
             "scripts": []
           }
